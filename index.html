@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <div class="container">
+<header>
+    <title>Chicken Crazed Survey Form</title>
+    <h1 id="title" >Chicken Crazed Survey Form</h1>
+    <p id="description" class="description text-center">Thanks for taking the time to help us improve our community!</p>
+</header>
+
+    <form id="survey-form">
+<div class="form-group">
+<label id="name-label" for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required></input>
+     </div>
+
+     <div class="form-group"> 
+<label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="Enter your email" required ></input>
+</div>
+
+<div class="form-group">
+    <label id="number-label" for="number">Age
+      <span class"clue">(optional)</span></label>
+    <input id="number" type="number" min="10" max="99" placeholder="Age"></input>
+</div>
+
+<div class="form-group">
+  <p>Which option best descibes your involvement with chickens?</p>
+<select id="dropdown" name="role" class="form-control" required>
+  <option disables selected value>Select current role</option>
+  <option value="student">Learning or don't yet have chickens</option>
+  <option value="job">Breeder or hatchery</option>
+  <option value="learner">Just here for fun</option>
+  <option value="preferNo">Prefer not to say</option>
+  <option value="other">Other</option>
+</select>
+</div>
+
+<div class="form-group">
+  <p>Would you reccoment Chicken Crazed to a friend?</p>
+  <label>
+    <input name="user-recommend" value="definitely" type="radio" class="imput-radio" checked>
+    Definitely
+  </label>
+
+    <label>
+    <input name="user-recommend" value="maybe" type="radio" class="imput-radio" checked>
+    Maybe
+  </label>
+
+    <label>
+    <input name="user-recommend" value="not-sure" type="radio" class="imput-radio" checked>
+    Not sure
+  </label>
+</div>
+
+<div class="form-group">
+  <p>What is the best part of Chicken Crazed for you?</p>
+  <select id="most-like" name="mostlike" class="form-control" required>
+    <option disabled selected value>Select and option</option>
+    <option value="challenges">Games</option>
+    <option value="projects">Giveaways</option>
+    <option value="community">Community</option>
+    <option value="openSource">Raffles</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <p>What would you like to see improved?
+    <span class="clue">(Check all that apply)</span></p>
+
+    <label>
+      <input name="prefer" value="more-activity-in-general" type="checkbox" class="input-checkbox">More activity in general
+    </label>
+
+   <label>
+      <input name="prefer" value="more-games" type="checkbox" class="input-checkbox">More games
+    </label>
+
+      <label>
+      <input name="prefer" value="variation-of-raffle-items" type="checkbox" class="input-checkbox">Variation of raffle items
+    </label>
+
+    <label>
+      <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Challenges
+    </label>
+
+    <label>
+      <input name="prefer" value="community" type="checkbox" class="input-checkbox">Community
+    </label>
+
+        <label>
+      <input name="prefer" value="advice-threads" type="checkbox" class="input-checkbox">Advice threads
+    </label>
+
+      <label>
+      <input name="prefer" value="videos" type="checkbox" class="input-checkbox">Videos
+    </label>
+
+<label>
+      <input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Wiki
+    </label>
+
+<label>
+      <input name="prefer" value="forum" type="checkbox" class="input-checkbox">Forum
+    </label>
+
+<label>
+      <input name="prefer" value="additional-resources" type="checkbox" class="input-checkbox">Additional resources
+    </label>
+</div>
+
+<div class="form-group">
+  <p>Comments or suggestions?</p>
+  <textarea id="comments" class="input-text-area" name="comment" placeholder="Enter your comments here..."></textarea>
+  </div>
+
+  <div class="form-group">
+    <button id="submit" type="submit" class="submit-button">Submit</button>
+    </div>
+ </form>
+</div>
+    </body>
+  </html>
